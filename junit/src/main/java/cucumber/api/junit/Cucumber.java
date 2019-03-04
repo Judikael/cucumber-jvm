@@ -49,9 +49,10 @@ import java.util.List;
  * }
 Fail * </pre></blockquote>
  * <p>
- * Cucumber will look for a {@code .feature} file on the classpath, using the same resource
- * path as the annotated class ({@code .class} substituted by {@code .feature}).
- * <p>
+ * By default Cucumber will look for {@code .feature} and glue files on the classpath, using the same resource
+ * path as the annotated class. So for example if the annotated class is {@code com.example.RunCucumber} then
+ * features and glue are assumed to be located in {@code com.example}.
+ * <p>d
  * Additional hints can be given to Cucumber by annotating the class with {@link CucumberOptions}.
  * <p>
  * Cucumber also supports JUnits {@link ClassRule}, {@link BeforeClass} and {@link AfterClass} annotations.
